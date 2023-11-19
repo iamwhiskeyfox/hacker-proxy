@@ -11,7 +11,8 @@ BASE_URL = HACKER_NEWS_URL
 
 def modify_text(text):
     words = text.split()
-    modified_words = [word + '™' if len(word) == 6 else word for word in words]
+
+    modified_words = [word + '™' if len(word) == 6 and word.isalpha() else word for word in words]
     return ' '.join(modified_words)
 
 
