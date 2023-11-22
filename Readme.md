@@ -2,6 +2,12 @@
 
 Этот проект представляет собой простой HTTP-прокси-сервер для отображения содержимого страниц Hacker News с модификацией текста.
 
+## Быстрый запуск через Docker
+Чтобы запустить контейнер, нам нужен Docker и docker-compose. Введите команду в папке /docker:
+```bash
+   docker-compose up --build
+```
+
 ## Установка
 
 1. Установите зависимости, запустив следующую команду:
@@ -13,22 +19,11 @@
 2. Запустите прокси-сервер:
 
     ```bash
-    python proxy_server.py
+    python app.py
     ```
 
    Прокси-сервер будет доступен по адресу `http://127.0.0.1:8232`.
 
-## Запуск тестов
-
-1. Убедитесь, что прокси-сервер не запущен или остановите его, если он работает.
-
-2. Запустите тесты с помощью следующей команды:
-
-    ```bash
-    python test_proxy_server.py
-    ```
-
-   Тесты проверяют базовую функциональность сервера.
 
 ## Использование
 
@@ -45,6 +40,13 @@ __________________________
 
 This project is a simple HTTP proxy server designed to display the content of Hacker News pages with text modification.
 
+## Quick Start with Docker
+To launch the container, we need Docker and docker-compose. Enter the following command in the terminal:
+
+```bash
+docker-compose up --build
+```
+
 ## Installation
 
 1. Install dependencies by running the following command:
@@ -56,22 +58,11 @@ This project is a simple HTTP proxy server designed to display the content of Ha
 2. Start the proxy server:
 
     ```bash
-    python proxy_server.py
+    python app.py
     ```
 
    The proxy server will be available at `http://127.0.0.1:8232`.
 
-## Running Tests
-
-1. Ensure that the proxy server is not running or stop it if it is.
-
-2. Run the tests using the following command:
-
-    ```bash
-    python test_proxy_server.py
-    ```
-
-   The tests validate the basic functionality of the server.
 
 ## Usage
 
